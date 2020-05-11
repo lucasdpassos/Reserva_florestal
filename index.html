@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Reserva Animal</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Reserva Florestal</title>
 </head>
 <body>
-    <header class="header1">
-        <div class="logo">
-            ...
-        </div>
-    </header>
+    <input type='checkbox' id='check'>
+    <label for="check">
+        <i class="fas fa-bars" id='btn'></i>
+        <i class="fas fa-times" id='cancel'></i>
+    </label>
+    <div class="sidebar">
+        <header>Menu</header>
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Doações</a></li>
+            <li><a href="#">Visitas</a></li>
+            <li><a href="#">Normas de Segurança</a></li>
+            <li><a href="#">Alvarás</a></li>
+            <li><a href="#">Espécies</a></li>
+        </ul>
+    </div>
+    <div class='cadastro'>
+        <h2>Cadastro</h2><br/>
+        <p>Receba notícias e notificações sobre nosso progresso</p>
+        <form class="form1">
+            Nome:<br/><br/>
+            <input type="text" placeholder="Nome Completo"><br/><br/>
+            E-mail:<br/><br/>
+            <input type="text" placeholder="E-mail"><br/><br/>
+            Telefone:<br/><br/>
+            <input type="number" id="tel1" placeholder="Telefone"><br/><br/>
+            Senha:<br/><br/>
+            <input type="password" id='senha1' placeholder="Senha"><br>
+            <input type="password" id='senha2' placeholder="Repita sua senha"><br/><br/>
+            <button>Cadastrar</button>
+        </form>
+    </div>
     
 </body>
+<footer> Lucas Passos &copy - https://github.com/lucasdpassos</footer>
 </html>

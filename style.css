@@ -1,12 +1,164 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+    text-decoration: none;  
 }
 
 .header1 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.568);
     height: 70px;
+    display: flex;
+    color: azure;
 }
 
 body {
     background-image: url('./imgs/bc1.jpg');
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.507);
+    transition: all .5s ease;
+}
+.sidebar header {
+    font-size: 22px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 70px;
+    background: rgba(0, 0, 0, 0.651);
+    user-select: none;
+
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    font-weight: 70px;
+    color: rgb(70, 204, 70);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#check {
+    display: none;
+
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+
+}
+
+.cadastro {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 40%;
+    left: 40%;
+    margin-top: -150px;
+    margin-left: -150px;
+    background-color: rgba(0, 0, 0, 0.637);
+    text-align: center;
+    color: azure;
+    padding: 8px;
+       
+}
+.form1 {
+    width: 200px;
+    height: 260px;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 32%;
+    text-align: center;
+    color: azure;
+    
+    
+}
+.form1 input{
+    height: 35px;
+    width: 200px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+.form1 input:hover{
+    border-color: green;
+}
+
+.form1 ::placeholder{
+    color: green;
+}
+#senha1, #senha2 {
+    width: 150px;
+}
+#tel1 {
+    width: 130px;
+}
+.form1 button {
+    width: 130px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 17px;
+}
+.form1 button:hover {
+    background-color: green;
+
+}
+footer {
+    position: absolute;
+    margin-top: 47%;
+    color: aliceblue;
+    margin-left: 39%;
+    font-size: 18px;
+    background-color: black;
 }
